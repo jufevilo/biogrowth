@@ -26,7 +26,12 @@
           <p class="display-3 font-weight-bold color-title">
             20% de Descuento.
           </p>
-          <v-btn color="green" x-large dark class="display-2"
+          <v-btn
+            href="https://biz.payulatam.com/L0e1facE54BC08C"
+            color="green"
+            x-large
+            dark
+            class="display-2"
             >$38.900 <v-icon large class="mx-2">mdi-cart</v-icon></v-btn
           >
           <p class="caption">Presione el boton para comprar</p>
