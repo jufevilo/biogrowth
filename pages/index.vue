@@ -13,9 +13,6 @@
     <div id="how-to-vote">
       <how-to-vote />
     </div>
-    <div id="order-lawn">
-      <order-lawn />
-    </div>
   </div>
 </template>
 <script>
@@ -23,10 +20,9 @@ import FirstDiv from '@/components/FirstDiv'
 import SecondDiv from '@/components/SecondDiv'
 import Contact from '@/components/Contact'
 import HowToVote from '@/components/HowToVote'
-import OrderLawn from '@/components/OrderLawn'
 import Donate from '@/components/Donate'
 export default {
-  components: { FirstDiv, SecondDiv, Contact, HowToVote, OrderLawn, Donate },
+  components: { FirstDiv, SecondDiv, Contact, HowToVote, Donate },
   watch: {
     menu(val) {
       console.log(val)

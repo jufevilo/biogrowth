@@ -2,13 +2,11 @@
   <v-app>
     <div>
       <div>
-        <v-img :src="require(`~/assets/images/header-2x.png`)" />
+        <v-img :src="require(`~/assets/images/header.png`)" />
       </div>
     </div>
     <div class="">
       <v-app-bar
-        color="#00143F"
-        dark
         class="d-flex justify-md-center align-center appbar"
         :class="scroll ? 'appbar' : 'appbar2'"
       >
@@ -17,30 +15,27 @@
           class="d-flex d-md-none"
           @click.stop="drawer = !drawer"
         ></v-app-bar-nav-icon>
-        <h5 class="text-h5">Michael Nochimson</h5>
+        <h5 class="text-h5 d-flex d-md-none">Transformando Miradas</h5>
         <div class="d-none d-md-flex">
-          <v-btn text class="title text-capitalize" color="white" to="#home"
+          <v-btn text class="title text-capitalize" color="#647547" to="#home"
             >Home</v-btn
           >
-          <v-btn text class="title text-capitalize" color="white" to="#donate"
-            >Donate</v-btn
+          <v-btn text class="title text-capitalize" color="#647547" to="#donate"
+            >Nosotros</v-btn
           >
           <v-btn
             text
             class="title text-capitalize"
-            color="white"
+            color="#647547"
+            to="#contact"
+            >Testimonios</v-btn
+          >
+          <v-btn
+            text
+            class="title text-capitalize"
+            color="#647547"
             to="#how-to-vote"
-            >How to vote</v-btn
-          >
-          <v-btn
-            text
-            class="title text-capitalize"
-            color="white"
-            to="#order-lawn"
-            >Order Lawn Signs and magnets</v-btn
-          >
-          <v-btn text class="title text-capitalize" color="white" to="#contact"
-            >Contact Michael</v-btn
+            >Tienda</v-btn
           >
         </div>
       </v-app-bar>
@@ -49,7 +44,7 @@
         v-model="drawer"
         absolute
         temporary
-        color="#00143F"
+        color="#647547"
         dark
       >
         <v-list nav dense>
@@ -59,20 +54,15 @@
             </v-list-item>
 
             <v-list-item to="#donate">
-              <v-list-item-title>DONATE</v-list-item-title>
+              <v-list-item-title>Nosotros</v-list-item-title>
+            </v-list-item>
+
+            <v-list-item to="#contact">
+              <v-list-item-title> Testimonios</v-list-item-title>
             </v-list-item>
 
             <v-list-item to="#how-to-vote">
-              <v-list-item-title> HOW TO VOTE</v-list-item-title>
-            </v-list-item>
-
-            <v-list-item to="#oder-lawn">
-              <v-list-item-title>
-                ORDER LAWN SIGNS AND MAGNETS
-              </v-list-item-title>
-            </v-list-item>
-            <v-list-item to="#contact">
-              <v-list-item-title> CONTACT MICHAEL</v-list-item-title>
+              <v-list-item-title> Tienda </v-list-item-title>
             </v-list-item>
           </v-list-item-group>
         </v-list>
@@ -81,47 +71,28 @@
     <v-main>
       <nuxt />
     </v-main>
-    <v-footer min-height="80px" class="d-flex justify-center" color="#00143F">
-      <p class="red--text font-italic my-0">CONNECT WITH MICHAEL:</p>
-      <v-btn to="" text dark>
-        <v-icon class="mr-2">mdi-link-variant</v-icon>www.nochimson.com</v-btn
+    <v-footer min-height="80px" class="d-flex justify-center" color="#647547">
+      <v-btn text dark>
+        <v-icon class="mr-2">mdi-phone</v-icon>321 340 4049</v-btn
+      >
+      <v-btn to="https://goo.gl/maps/TQb3inRJ8drbBw4M8" text dark>
+        <v-icon class="mr-2">mdi-map-marker</v-icon>Calle 40 #51-109
+        Itagui</v-btn
       >
       <v-btn
-        href="https://www.facebook.com/michaelnochimson"
+        href="https://www.instagram.com/biogrowthoficial/?hl=en"
         target="_blank"
         text
         dark
       >
-        <v-icon class="mr-2">mdi-facebook</v-icon>MichaelNochimson</v-btn
-      >
-      <p class="white--text my-0">PAID FOR BY NOCHIMSON NOW</p>
+        <v-icon class="mr-2">mdi-instagram</v-icon>biogrowthoficial
+      </v-btn>
     </v-footer>
-    <!-- Donate one -->
-    <donate-bar />
-    <div class="letrero d-none d-md-flex" :class="scroll ? 'sign1' : 'sign2'">
-      <v-img
-        :src="require(`~/assets/images/letrero.png`)"
-        max-height="300px"
-        max-width="300px"
-      />
-      <neon />
-    </div>
-    <div class="letrero d-flex d-md-none" :class="scroll ? 'sign1' : 'sign2'">
-      <v-img
-        :src="require(`~/assets/images/letrero.png`)"
-        max-height="120px"
-        max-width="120px"
-      />
-      <neon />
-    </div>
   </v-app>
 </template>
 
 <script>
-import Neon from '@/components/Neon'
-import DonateBar from '@/components/DonateBar'
 export default {
-  components: { DonateBar, Neon },
   data: () => ({
     scroll: true,
     menu: '',
@@ -152,16 +123,5 @@ export default {
   top: 0;
   z-index: 1;
   width: 100%;
-}
-
-.sign1 {
-  position: fixed;
-  top: 1%;
-  right: 1%;
-  z-index: 1;
-}
-
-.sign2 {
-  display: none !important;
 }
 </style>

@@ -4,55 +4,55 @@
       min-height="100px"
       flat
       tile
-      color="#00143F"
+      color="#647547"
       class="d-flex justify-center white--text"
     >
       <v-card-title>
-        <p class="d-none d-md-flex display-1 my-0">Contact Michael</p>
-        <p class="d-md-none title my-0">Contact Michael</p>
+        <p class="d-none d-md-flex display-1 my-0">Testimonios</p>
+        <p class="d-md-none title my-0">Testimonios</p>
       </v-card-title>
     </v-card>
-    <div class="py-16">
-      <v-row class="ma-0">
-        <v-col md="6" class="pa-5 ma-0 d-flex justify-center align-center">
-          <v-card class="pa-5" outlined tile width="90%">
-            <form class="">
-              <v-text-field outlined dense label="Name" required></v-text-field>
-              <v-text-field
-                outlined
-                dense
-                label="Phone Number"
-                required
-              ></v-text-field>
-              <v-text-field
-                outlined
-                dense
-                label="E-mail"
-                required
-              ></v-text-field>
-              <v-btn color="#00143F" dark type="submit"> submit </v-btn>
-              <v-btn color="#BF1B2C" dark> clear </v-btn>
-              <v-btn
-                color="#0F8FF2"
-                icon
-                dark
-                large
-                href="https://www.facebook.com/michaelnochimson"
-                target="_blank"
-              >
-                <v-icon large>mdi-facebook</v-icon>
-              </v-btn>
-            </form>
-          </v-card>
-        </v-col>
-        <v-col md="6" class="ma-0 d-flex justify-center">
-          <v-img :src="require(`~/assets/images/office.jpg`)" />
-        </v-col>
-      </v-row>
+    <div class="pt-16 d-flex justify-center">
+      <p>
+        Biogrowth, através del tiempo se a enfocado en la efectividad, día a día
+        trabajamos para delvolverle la mirada y la confianza a cientos de
+        mujeres.
+      </p>
     </div>
+    <v-card elevation="2" max-width="444" height="780" class="mx-auto"
+      ><v-carousel height="780" hide-delimiters>
+        <v-carousel-item>
+          <v-img :src="require(`~/assets/images/carousel/1.jpeg`)"
+        /></v-carousel-item>
+        <v-carousel-item>
+          <v-img :src="require(`~/assets/images/carousel/2.jpeg`)"
+        /></v-carousel-item>
+        <v-carousel-item>
+          <v-img :src="require(`~/assets/images/carousel/3.jpeg`)"
+        /></v-carousel-item>
+        <v-carousel-item>
+          <v-img :src="require(`~/assets/images/carousel/4.jpeg`)"
+        /></v-carousel-item>
+        <v-carousel-item>
+          <v-img :src="require(`~/assets/images/carousel/5.jpeg`)"
+        /></v-carousel-item>
+        <v-carousel-item>
+          <v-img :src="require(`~/assets/images/carousel/6.jpeg`)"
+        /></v-carousel-item>
+        <v-carousel-item>
+          <v-img :src="require(`~/assets/images/carousel/7.jpeg`)"
+        /></v-carousel-item>
+        <v-carousel-item>
+          <v-img :src="require(`~/assets/images/carousel/8.jpeg`)"
+        /></v-carousel-item> </v-carousel></v-card
+    >>
   </div>
 </template>
 <script>
-export default {}
+export default {
+  data() {
+    return {}
+  },
+}
 </script>
 <style></style>
