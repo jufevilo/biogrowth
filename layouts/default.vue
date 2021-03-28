@@ -72,10 +72,20 @@
       <nuxt />
     </v-main>
     <v-footer min-height="80px" class="d-flex justify-center" color="#647547">
-      <v-btn text dark>
-        <v-icon class="mr-2">mdi-phone</v-icon>321 340 4049</v-btn
+      <v-btn
+        text
+        dark
+        href="https://api.whatsapp.com/send?phone=+573506504225"
+        target="_blank"
       >
-      <v-btn to="https://goo.gl/maps/TQb3inRJ8drbBw4M8" text dark>
+        <v-icon class="mr-2">mdi-phone</v-icon>350 650 4225</v-btn
+      >
+      <v-btn
+        href="https://goo.gl/maps/TQb3inRJ8drbBw4M8"
+        text
+        dark
+        target="_blank"
+      >
         <v-icon class="mr-2">mdi-map-marker</v-icon>Calle 40 #51-109
         Itagui</v-btn
       >
