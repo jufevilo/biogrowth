@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <div class="d-none d-md-flex">
-      <v-img :src="require(`~/assets/images/main-image.png`)" />
+      <v-img :src="require(`~/assets/images/main-image.jpg`)" />
     </div>
     <div class="d-md-none">
       <v-img :src="require(`~/assets/images/main-image-cut.png`)" />

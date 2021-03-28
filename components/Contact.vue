@@ -19,33 +19,37 @@
         mujeres.
       </p>
     </div>
-    <v-card elevation="2" max-width="444" height="780" class="mx-auto"
-      ><v-carousel height="780" hide-delimiters>
-        <v-carousel-item>
-          <v-img :src="require(`~/assets/images/carousel/1.jpeg`)"
-        /></v-carousel-item>
-        <v-carousel-item>
-          <v-img :src="require(`~/assets/images/carousel/2.jpeg`)"
-        /></v-carousel-item>
-        <v-carousel-item>
-          <v-img :src="require(`~/assets/images/carousel/3.jpeg`)"
-        /></v-carousel-item>
-        <v-carousel-item>
-          <v-img :src="require(`~/assets/images/carousel/4.jpeg`)"
-        /></v-carousel-item>
-        <v-carousel-item>
-          <v-img :src="require(`~/assets/images/carousel/5.jpeg`)"
-        /></v-carousel-item>
-        <v-carousel-item>
-          <v-img :src="require(`~/assets/images/carousel/6.jpeg`)"
-        /></v-carousel-item>
-        <v-carousel-item>
-          <v-img :src="require(`~/assets/images/carousel/7.jpeg`)"
-        /></v-carousel-item>
-        <v-carousel-item>
-          <v-img :src="require(`~/assets/images/carousel/8.jpeg`)"
-        /></v-carousel-item> </v-carousel></v-card
-    >>
+    <div class="py-16">
+      <v-card elevation="2" max-width="444" height="780" class="mx-auto"
+        ><v-carousel height="780" hide-delimiters>
+          <v-carousel-item>
+            <v-img :src="require(`~/assets/images/carousel/1.jpeg`)"
+          /></v-carousel-item>
+          <v-carousel-item>
+            <v-img :src="require(`~/assets/images/carousel/2.jpeg`)"
+          /></v-carousel-item>
+          <v-carousel-item>
+            <v-img :src="require(`~/assets/images/carousel/3.jpeg`)"
+          /></v-carousel-item>
+          <v-carousel-item>
+            <v-img :src="require(`~/assets/images/carousel/4.jpeg`)"
+          /></v-carousel-item>
+          <v-carousel-item>
+            <v-img :src="require(`~/assets/images/carousel/5.jpeg`)"
+          /></v-carousel-item>
+          <v-carousel-item>
+            <v-img :src="require(`~/assets/images/carousel/6.jpeg`)"
+          /></v-carousel-item>
+          <v-carousel-item>
+            <v-img :src="require(`~/assets/images/carousel/7.jpeg`)"
+          /></v-carousel-item>
+          <v-carousel-item>
+            <v-img
+              :src="
+                require(`~/assets/images/carousel/8.jpeg`)
+              " /></v-carousel-item></v-carousel
+      ></v-card>
+    </div>
   </div>
 </template>
 <script>
